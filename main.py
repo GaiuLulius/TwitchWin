@@ -14,19 +14,6 @@ import time
 
 warnings.filterwarnings("ignore", category=DeprecationWarning)
 
-# def check_for_updates():
-#     try:
-#         r = requests.get("https://raw.githubusercontent.com/Kichi779/Twitch-Viewer-Bot/main/version.txt")
-#         remote_version = r.content.decode('utf-8').strip()
-#         local_version = open('version.txt', 'r').read().strip()
-#         if remote_version != local_version:
-#             print("A new version is available. Please download the latest version from GitHub.")
-#             time.sleep(3)
-#             return False
-#         return True
-#     except:
-#         return True
-
 def save_settings(twitch_username, set_160p):
     with open('settings.txt', 'w') as file:
         file.write(f"Twitch Username: {twitch_username}\n")
