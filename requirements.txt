@@ -1,0 +1,6 @@
+colorama
+pystyle
+selenium
+requests
+pyinstaller
+pip-upgrader
